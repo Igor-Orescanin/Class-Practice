@@ -1,0 +1,39 @@
+/* font-family: 'Galada', cursive; */
+  
+  
+  main {
+    margin: 30px;
+  }
+  
+  img {
+    height: 100px;
+  }
+  
+  /* Task 1 */
+  h3 {
+    color: blue;
+  }
+  #unset {
+    all: initial;
+
+  }
+  /* Task 2 */
+  ol li:nth-child(3) , ol li:nth-child(5){
+    color: red;
+  }
+  /* Task 3 */
+  img + img {
+    border: dotted red;
+  }
+  /* Task 4 */
+  a[href$=".com"] {
+    background-color:yellow;
+}
+  /* Task 5 */
+  #task5 {
+    color: seagreen;
+    font-family: 'Galada', cursive;
+  }
+ ul {
+   bot
+ }
