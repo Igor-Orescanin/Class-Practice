@@ -1,0 +1,35 @@
+button {
+    border-radius: 10%;
+    margin: 2%; 
+    border: double; 
+}
+
+
+button a {
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+}
+a:active {
+    color: rgb(86, 188, 228);
+}
+a {
+    font-size: 2em;
+    color: white;
+}
+
+ul {
+    text-align: center;
+    margin: 20%;
+    list-style: none;
+}
+.bg1tcolor {
+    background-color: red;
+}
+.bg2color {
+    background-color: darkblue;
+}
+.bg3color {
+    background-color: rgb(55, 99, 12);
+}

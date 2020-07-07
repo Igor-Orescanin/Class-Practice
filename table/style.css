@@ -1,0 +1,23 @@
+#box {
+    text-align: center;
+    border: red solid 5px;
+}
+table {
+    
+    width: 100%;
+    text-align: center;
+}
+#t01 tr:nth-child(odd) {
+    background-color: aqua;
+}
+#t01 tr:nth-child(even) {
+    background-color: blueviolet;
+}
+#t02 th {
+    color: white;
+    background-color: black;
+}
+#t02 th, #t02 td {
+    outline: solid 1px rgb(49, 47, 47);
+}
+
