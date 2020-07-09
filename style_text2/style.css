@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+:root {
+    font-family: 'Roboto', sans-serif; 
+}
+
+h1 {
+    text-decoration: underline;
+}
+.heading {
+    text-shadow: blue 2px 2px 2px;
+    text-transform: uppercase;}
+li {
+    font-weight: lighter;
+}
+.note {
+    font-weight: bold;
+    font-style: italic;
+}
+.todo-item {
+    text-decoration: line-through ;
+}

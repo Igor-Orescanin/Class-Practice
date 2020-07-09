@@ -1,0 +1,9 @@
+h1, h2, h3 {
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+p:nth-of-type(2) {
+    direction: rtl;
+}
