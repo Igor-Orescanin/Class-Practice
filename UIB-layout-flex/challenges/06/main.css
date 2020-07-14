@@ -1,0 +1,29 @@
+/* Use flexbox to display all divs in one column in the center of the page.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 5px solid red;
+}
+
+div {
+    height: 100px;
+    width: 150px; 
+    background-color: darkgray;
+    margin: 1em;
+    border: 2px solid red;
+    text-align: center;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
