@@ -1,0 +1,24 @@
+* {
+    outline: solid black;
+    box-sizing: border-box;
+}
+em, strong {
+    padding: 40px;
+    margin: 40px;
+}
+p {
+    
+
+}
+main {
+    width: 80%;
+}
+img {
+ width: 200px;
+ padding: 30px;
+ margin: 20px;
+}
+.line {
+    display: inline;
+    color:green
+}

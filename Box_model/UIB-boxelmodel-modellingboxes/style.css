@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header { 
+    height: 10vh;
+    width: 100%;
+    background-color: violet;
+}
+aside, main, footer {
+    /* display: inline-block; */
+    float: left;
+
+}
+
+aside {
+    width: 25%;
+    background-color: green;
+}
+main {
+    background-color: red;
+    width: 75%;
+}
+aside, main {
+    height: 80vh;
+}
+footer {
+    
+    height: 10vh;
+    width: 100%;
+    background-color:violet;
+
+}
