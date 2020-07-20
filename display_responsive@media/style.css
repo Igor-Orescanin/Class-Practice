@@ -1,0 +1,40 @@
+.disp {
+    background-color: blueviolet;
+}
+/*  tablets 600px and up */
+@media only screen and (min-width: 600px) {
+    .disp {
+        background-color: cadetblue;
+    }
+}
+/* extra small devices  */
+@media only screen and (max-width: 600px) {
+    .disp {
+        background-color: chartreuse;
+    }
+}
+
+
+/* @media only screen and (orientation: landscape) {
+    body {
+        background-color: blue;
+    }
+} */
+.example {
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 500px) {
+    .example {
+        display: none;
+    }
+}
+.h1 {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
