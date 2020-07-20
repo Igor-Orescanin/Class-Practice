@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    text-align: center;
+}
+
+.action, 
+.triller, 
+.comedy, 
+.horror,
+.drama,
+.romance {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+
+.action {
+    background-color: dodgerblue;
+}
+
+.triller {
+    background-color: rgb(190, 178, 178);
+    flex-grow: 10;
+}
+
+.comedy {
+    background-color: rgb(255, 214, 30);
+    flex-grow: 10;
+}
+
+.horror {
+    background-color: black;
+    
+    color: white;
+}
+.drama {
+    background-color: darkgray;
+}
+
+.romance {
+    background-color: red;
+}
+
+
+/* # Movie Genres
+
+**Instructions**:
+
+1.  Create a section with the class `genres`. Make it a flex-container.
+2.  Inside the flex-container, create 6 sections with the following content and background-colors. They should be created in the following order:
+    - Action → dodgerblue
+    - Thriller → rgb(190, 178, 178)
+    - Comedy → rgb(255, 214, 30)
+    - Horror → black
+    - Drama → darkgrey
+    - Romance → red
+3.  For each section, center the font.
+4.  Each flex-item should have a basic width of 500px and a fixed height of 100px. By default, each flex-item should take up all extra space.
+5.  Now, make an exception for "thriller" and "comedy", Both sections should take up 10 times the amount of extra-space of their adjacent element.
+    
+**Hint**: Consider using flex-wrap.
+
+![reference-gif](/images/example.gif) */
+
