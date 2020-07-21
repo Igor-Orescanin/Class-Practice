@@ -1,114 +1,139 @@
-body {
-    background-color: rgb(204, 204, 204);
-}
-
-
-nav {
-    background-color: white;
-    height:5vw;
-}
-nav img {
-    height: inherit;
-    width: 20vw; 
-}
-.menu {
-    display: inline-block;
-    float: right;
-}
-
-
-header {
-    background-image: url(img/reichstag.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-
-h1 {
-    width: 70vw;
-    margin: 0 auto;
-    font-size:2.5rem;
-    text-shadow: 1px 1px 1px black;
-    color: white;
-    padding-top: 50vh;
-}
-
-button {
-    margin-top: 1rem;
-    background-color: rgb(255, 204, 51);
-    border-radius: 20px;
-    height: 3em;
-    width: 15em;
-    border: 4px solid rgb(209, 113, 5);
-
-}
-a {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: rgb(209, 113, 5);
-    text-decoration: none;
-}
-
-/* .wrap {
-    width: 80%;
-    margin: 0 auto;
-} */
-.first, .second, .third, .fourth {
-    width: 40%;
-    float: left;
-    margin: 0 auto 2rem 8rem;
-}
-
-div>img {
-    float: left;
-    height: 10%;
-    width: 10%;
-    margin: 0 1rem 0 0;
-}
-
-p {
-    font-size: 1.3em;
+* {
+    box-sizing: border-box;
     margin: 0;
-    display: inline-block;
-    width: 85%;
 }
-@media only screen and (max-width: 1280px){
-    .first, .second, .third, .fourth {
-        float: none;
-        margin: 2rem auto;
-    }
+
+
+.header-container {
+    /* border: solid 2px orange; */
+    width: 95%;
+    margin: 0 auto;
+    position: relative; 
 }
-@media only screen and (max-width: 1111px){
-    h1 {
-        position: relative;
-        font-size: 2rem;
-    }
-    a {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-    button {
-        width: 10rem;
-        height: 2rem;
-    }
-    header {
+
+
+.logo__img {
+    /* border: solid 2px green; */ 
+    width: 150px;
+    height: auto;
+}
+
+
+.hamburger__img {
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 25;
+}
+
+
+.hero {
+    background-image: url(assets/reichstag.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+
+.hero__text {
+    width: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: white;
+}
+
+
+.hero__title {
     
+    font-style: italic;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.button {
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: rgb(214, 110, 25);
+    background: rgb(255, 196, 0);
+    padding: 0.15em 1.5em;
+    border: 1.75px solid rgb(214, 110, 25);
+    border-radius: 50px;
+}
+
+
+.info {
+    display: table;
+    margin: 0 auto;
+    /* width: 75%; */
+    background: rgb(224, 223, 223);
+}
+
+
+.info__features, 
+.info__service, 
+.info__taste, 
+.info__limits {
+    width: 48%;
+    display: inline-block;
+    padding: 25px;
+    margin: 0;
+}
+
+
+.info__img {
+    /* border: solid 2px red; */
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 5px 20px 40px 10px;
+}
+
+
+.clearfix {         /* This fixed the text overflow problem caused when we placed the float left on the img */
+    overflow: auto;
+}
+
+
+footer {
+    background: rgb(112, 110, 110);
+    padding: 1.5rem;
+    color: white;
+}
+
+
+@media screen and (max-width: 750px) {
+    .info > div {
+        width: 100%;
+
     }
 }
-@media only screen and (max-width: 380px){
-    header {
-        background-size: 100% 30%;
-        
+
+
+@media screen and (max-width: 480px) {
+    .hero {
+        background-image: url(assets/reichstag.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30vh;
     }
-    h1,a {
-        font-size: .5rem;
-    }
-    button {
-        
+
+    .hero__title {
+        font-size: 1.5rem;
     }
 }
+
+
+
+
+ 
+
+

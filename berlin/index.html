@@ -3,61 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berlin</title>
-    <link rel="stylesheet" href="normalize.css">
+    <title>Project Berlin</title>
+
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
 
-    <nav>
+    <header>
+        <div class="header-container">
+            <img class="logo__img" src="assets/sprint.svg" alt="Sprint logo">
+
+            <img class="hamburger__img" src="assets/hamburgermenu.svg" alt="The hamburger menu">
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero__text">
+            <h1 class="hero__title">Welcome to Berlin and the Future</h1>
+            <a class="button" href="#">Get Started</a>
+        </div>
+    </section>
+ 
+    
+    <section class="info">
+        <div class="info__features clearfix">
+            <img class="info__img" src="assets/cat.svg" alt="A black cat icon">
+            <div class="info__wrapper">
+                <h2 class="info__title">Best-in-class Features</h2>
+                <p class="info__text">Nobody does this stuff better than us. You can bet your life on that.</p>
+            </div>
+        </div>
+
+        <div class="info__service clearfix">
+            <img class="info__img" src="assets/world.svg" alt="A globe icon">
         
-            <img src="img/sprint.svg" alt="">
+                <h2 class="info__title">Reliable Service</h2>
+                <p class="info__text">You can count on us to help you whenever you need it. We're talking round the clock service.</p>
     
-            <img class="menu" src="img/hamburgermenu.svg" alt="">    
-        </nav>
-    
-        <header>
-    
+        </div>
+
+        <div class="info__taste clearfix">
+            <img class="info__img" src="assets/swim.svg" alt="An icon of a swimmer">
             
-            <h1>
-                Welcome to Berlin and the Future.
-            </h1>
-            <button>
-                <a href="#">Get Started</a>
-            </button>
-        </header>
-
-
-
-        <!-- <div class="wrap"> -->
-            <div class="first">
-    
-                <img src="img/cat.svg" alt="">
+                <h2 class="info__title">Acquired Taste</h2>
+                <p class="info__text">It may take a little while for you to warm up to us but once you do you will never want to switch.</p>
             
-                <p><strong>Best-in-class Features</strong><br>
-            Nobody does this stuff better than us.You can bet your life on that.</p>
         </div>
-    
-        <div class="second">
-                    <img src="img/world.svg" alt="">
-                
-                    <p><strong>Reliable Service</strong> <br>
-            You can count on us to help you whenever you need it.We're talking round the clock service.</p>
+
+        <div class="info__limits clearfix">
+            <img class="info__img" src="assets/columns.svg" alt="An icon of columns">
+            <div class="info__wrapper">
+                <h2 class="info__title">No Limits</h2>
+                <p class="info__text">There are absolutely no limits. We do not throttle. We do not cap.</p>
+            </div>
         </div>
-        
-        <div class="third">
-            <img src="img/swim.svg" alt="">
-            <p><strong>An Acquired Taste</strong> <br>
-            It may take a little while for you to warm up to us but once you do you will never want to switch.</p>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; Some Organization</p>
         </div>
-        
-        <div class="fourth">
-            <img src="img/columns.svg" alt="">
-            <p><strong>No Limits</strong> <br>
-            There are absolutely no limits. We do not throttle. We do not cap.</p>
-        </div>
-        
-        <!-- </div> -->
-    
+    </footer>
+
 </body>
 </html>
