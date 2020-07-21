@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div {
+    height: 150px;
+}
+
+.one {
+    background-color: orchid;
+    flex-basis: 50%;
+}
+
+.two {
+    background-color: red ;
+    flex-basis: 50%;
+}
+
+.three {
+    background-color: blue ;
+    flex-basis: 33.33%;
+}
+
+.four {
+    background-color: green ;
+    flex-basis: 33.33%;
+}
+
+.five {
+    background-color: yellow ;
+    flex-basis: 33.33%;
+}
+
+.six {
+    background-color: orange ;
+    flex-basis: 50%;
+}
+
+.seven {
+    background-color: darkcyan ;
+    flex-basis: 50%;
+}
+
+@media only screen and (max-width:600px) {
+    .container {
+        flex-direction: column;
+    }
+    .container div {
+        flex-basis: unset;
+    }
+} 
+
+@media only screen and (min-width:600px) and (max-width:800px) {
+    .one {
+        flex-basis: 100%;
+    }
+    .two {
+        flex-basis: 100%;
+    }
+    .six {
+        flex-basis: 100%;
+    }
+    .seven {
+        flex-basis: 100%;
+    }
+}
