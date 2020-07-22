@@ -1,0 +1,54 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin-top: 10px;
+}
+
+.task_one {
+    width: 50%;
+    margin: auto;
+}
+
+.task_one::before {
+    content: "Once upon a time...";
+    font-weight: bold;
+}
+
+.task_one::after {
+    content: "...The end.";
+    font-weight: bold;
+}
+
+.task_two {
+    margin: auto;
+    /* padding: 50px; */
+    width: 300px;
+    height: 400px;
+    /* clip-path: polygon(50% 0%, 90% 50%, 50% 100%, 10% 50%);*/
+    background-image: url(assets/beach.jpg);
+    /* background-size: cover;
+    background-repeat: no-repeat;  */
+}
+
+.task_two::before {
+    display: block;
+    border-top: 200px solid teal;
+    border-left: 150px solid gray;
+    border-right: 150px solid yellow;
+}
+.task_two::after {
+    display: block;
+    border-bottom: 200px solid teal;
+    border-left: 150px solid gray;
+    border-right: 150px solid yellow;
+}
+.task_three {
+    margin: auto;
+    height:300px;
+    width:300px;
+    transform: rotate(180deg);
+}
+
