@@ -25,7 +25,7 @@ section {
 .task_two {
     margin: auto;
     /* padding: 50px; */
-    width: 300px;
+    width: 500px;
     height: 400px;
     /* clip-path: polygon(50% 0%, 90% 50%, 50% 100%, 10% 50%);*/
     background-image: url(assets/beach.jpg);
@@ -34,14 +34,16 @@ section {
 }
 
 .task_two::before {
+    content: "";
     display: block;
-    border-top: 200px solid teal;
+    border-bottom: 200px solid transparent;
     border-left: 150px solid gray;
     border-right: 150px solid yellow;
 }
 .task_two::after {
+    content:"";
     display: block;
-    border-bottom: 200px solid teal;
+    border-top: 200px solid transparent;
     border-left: 150px solid gray;
     border-right: 150px solid yellow;
 }
@@ -51,4 +53,11 @@ section {
     width:300px;
     transform: rotate(180deg);
 }
-
+.one {
+    width: 100px;
+    height: 100px;
+    border-bottom:20px solid gray ;
+    border-top: 20px solid yellow;
+    border-left: 20px solid violet;
+    border-right: 20px solid ;
+}
