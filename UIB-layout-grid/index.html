@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+/*IF HEIGHT OR WIDTH NEEDDED FOR ROW OR COLUMN THAN ASIGN IT IN THE PARENT ELEMENT   */
+        .container {
+            margin: 10% auto;
+            width: 80%;
+            text-align: center;
+            border: solid 1px red;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: repeat(4,1fr);
+        }
+/* GIVING THE CHILD ELEMENT A FIXED HEIGHT OR WIDTH WILL BLOCK SPANING*/
+        .container>div {
+            border: solid 1px blue;
+            padding: 2rem;
+            
+        }
+
+        .n2 {
+            background-color: burlywood;
+            grid-column: 2 / 4;
+        }
+
+        .n6 {
+            background-color: chartreuse;
+            grid-column: 3 / 5;
+        }
+
+        .n9 {
+            background-color: aqua;
+/* GRID-AREA SHORTHAND VALUES <row-start> / <column-start> / <row-end> / <column-end> */
+            grid-area: 3 / 2 / 5 / 3;
+        } 
+
+        .n10 {
+            background-color: blue;
+            grid-column: 4 / 5;
+            grid-row: 3 / span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="n1">1</div>
+        <div class="n2">2</div>
+        <div class="n3">3</div>
+        <div class="n4">4</div>
+        <div class="n5">5</div>
+        <div class="n6">6</div>
+        <div class="n7">7</div>
+        <div class="n8">8</div>
+        <div class="n9">9</div>
+        <div class="n10">10</div>
+        <div class="n11">11</div>
+        <div class="n12">12</div>
+    </div>
+</body>
+</html>

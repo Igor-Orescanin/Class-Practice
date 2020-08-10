@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    padding: 200px;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: orange;
+    position: relative;
+    display: inline-block;
+    margin: 100px;
+}
+
+.with-circle::before {
+    content: "";
+    background-color: orange;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.with-triangle {
+    transform: rotate(180deg);
+}
+
+.with-triangle::after {
+    content: "";
+    border-top: 50px solid orange;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    position: relative;
+    bottom: -115%;
+}
