@@ -3,68 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <header>
+        <h1>Forms</h1>
+    </header>
+
+    <section>
+
     <form class="personal_data" action="#">
 
-        <fieldset>
+        <div class="personal_container">
+            
+        
+                <fieldset>
+        
+                    <legend>Personal Data</legend>
+        
+                    <label for="fname">First name:</label>
+                    <input type="text" name="fname" id="fname"> 
+        
+                    <label for="lname">Last name:</label>
+                    <input type="text" name="lname" id="lname"> 
+        
+                    <label for="address">Street:</label>
+                    <input type="address" name="address" id="address"> 
+        
+                    <label for="zipcode">Zipcode:</label>
+                    <input id="zip" name="zip" type="text" pattern="[0-9]*"> 
+        
+                    <label for="city">City:</label>
+                    <input type="city" name="city" id="city"> 
+        
+                    <label for="phone">Phone:</label>
+                    <input type="number" id="phone" name="phone"> 
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"> 
+                    
+                    <label for="msg">Comments:</label>
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Tell us more about important colors, etc."></textarea> <br>
+        
+                </fieldset>
+        
+            
 
-            <legend>Personal Data</legend>
+        </div>
+    
+        <div class="products_container">
+        
+                <fieldset>
+        
+                    <legend>Products</legend>
+        
+                    <label for="webdes">Web Design:</label>
+                    
+                    <div class="webdes">
 
-            <label for="fname">First name:</label>
-            <input type="text" name="fname" id="fname"> <br>
+                        <input type="radio" name="webdes" value="individual" id="individual">
+                        <label for="individual">Individual</label>
+    
+    
+                        <input type="radio" name="webdes" value="template" id="template">
+                        <label for="template">Template</label>
+                        
+                    </div>
 
-            <label for="lname">Last name:</label>
-            <input type="text" name="lname" id="lname"> <br>
 
-            <label for="address">Street:</label>
-            <input type="address" name="address" id="address"> <br>
+                    <div class="webdev">
 
-            <label for="zipcode">Zipcode:</label>
-            <input id="zip" name="zip" type="text" pattern="[0-9]*"> <br>
+                        <label for="webdev">Web Development:</label>
 
-            <label for="city">City:</label>
-            <input type="city" name="city" id="city"> <br>
+                        <div>
+                            <input type="checkbox" name="webdev" value="html" id="html"> 
+                            <label for="html">HTML & CSS</label> 
+                        </div>
 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br>
+                        <div>
+                            <input type="checkbox" name="webdev" value="java" id="java"> 
+                            <label for="java">JavaScript</label> 
+                        </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"> <br>
+                        <div>
+                            <input type="checkbox" name="webdev" value="mongo" id="mongo"> 
+                            <label for="mongo">MongoDB</label> 
+                        </div>
 
-            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Tell us more about important colors, etc."></textarea> <br>
-
-        </fieldset>
+                    </div>
+        
+                    <label for="pstart">Project Start:</label>
+                    <input type="date" value="mm/dd/yyyy"  name="pstart" id="pstart">
+        
+                    <label for="pend">Project End:</label>
+                    <input type="date" value="mm/dd/yyyy" name="pend" id="pend"> 
+        
+                    <label for="category">Category:</label>
+                    <select name="category" id="category">
+                        <option value="personal">Personal</option>
+                        <option value="business">Business</option>
+                    </select>
+        
+                </fieldset>
+    
+                <input type="submit" value="Order our services">
+    
+        
+        </div>
 
     </form>
 
-    <form action="#" class="products">
-
-        <fieldset>
-
-            <legend>Products</legend>
-
-            <label for="webdesign">Web Design:</label>
-            <input type="radio" name="webdesign" value="individual">Individual
-            <input type="radio" name="webdesign" value="template">Template <br>
-
-            <label for="webdevelopment">Web Development</label>
-            <input type="checkbox" name="webdevelopment" value="html"> HTML & CSS
-            <input type="checkbox" name="webdevelopment" value="java"> JavaScript
-            <input type="checkbox" name="webdevelopment" value="mongo"> MongoDB <br>
-
-            <label for="pstart">Project Start:</label>
-            <input type="datetime" name="pstart" id="pstart"> <br>
-
-            <label for="pend">Project End:</label>
-            <input type="datetime" name="pend" id="pend"> <br>
-
-            <label for="category">Category:</label>
-            <select name="category" id="category"></select>
-
-        </fieldset>
-    </form>
+    </section>
 
 </body>
 </html>
