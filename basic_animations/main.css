@@ -16,27 +16,34 @@ div {
   width: 20%;
 }
 
-.strobe_1 {
-  background-color: yellow;
-  
+div:nth-child(odd) {
+  /* background-color: yellow; */
 }
-.strobe_1:hover {
-  
-  animation: first 2s infinite alternate-reverse;
+
+div:hover:nth-child(odd) {
+  animation: first 5s infinite;
 } 
-.strobe_1:active {
-  animation-play-state: running;
-}
+
 
 @keyframes first {
-
   from,to {
     background-color: yellow;}
 
   50% {
     background-color: teal;
   }
-
 }
 
+div:hover:nth-child(2n) {
+  animation: second 2s infinite;
+}
+
+@keyframes second {
+  from,to {
+    background-color: hotpink;
+  }
+  50% {
+    background-color: lightskyblue;
+  }
+}
 
