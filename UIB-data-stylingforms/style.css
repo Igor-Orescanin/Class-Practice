@@ -9,12 +9,10 @@ body {
 }
 
 main {
-    /* text-align: center; */
-    width: 70%;
-    margin: 5% auto 0;
+    width: 60%;
+    margin: auto;
     background-color: black;
     background-image: url(images/background.jpg);
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -29,6 +27,7 @@ main {
 .container {
     width: 60%;
     margin: 3% auto;
+    text-align: center;
 }
 
 img {
@@ -36,6 +35,7 @@ img {
 }
 
 .intro {
+    width: 100%;
     border: 10px solid black;
     margin: 2rem 0;
     background-color:rgb(223, 215, 215, .7) ;
@@ -91,7 +91,6 @@ label {
     display: block;
     padding: .2rem;
     color: white;
-    margin: 0;
     text-align: unset;
     background-color: rgb(58, 55, 55);
 }

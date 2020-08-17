@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    background-image: linear-gradient(to right,#FFB9C9,#ADD6E8);
+    padding: 5%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin:2rem auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0 2rem 2rem;
+    border-radius:4px 
+}
+
+input[type=text]:focus, textarea:focus{
+    border:solid 1px blue;
+    outline: solid 1px blue;
+}
+
+input[type=email]:focus{
+    border:solid 1px pink;
+    outline: solid 1px pink;
+}
+
+input, textarea{
+    border: solid 1px black;
+    width: 100%;
+    font-size: 1rem;
+    padding: .5rem;
+    margin: .3rem 0 .3rem;
+    
+}
+
+#lname, #email {
+    margin-bottom: 1.5rem;
+}
+
+.toggle {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    padding: .4rem;
+    font-size: 1.5rem;
+}
+
+input[type=submit] {
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓TOGGLE SWITCH CSS↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  */
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.slider{
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: grey;
+	display: block;
+	border-radius: 50px;
+	position: relative;
+}
+
+.slider:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 40px;
+	transition: 0.3s;
+}
+
+input:checked + .slider {
+	background: #bada55;
+}
+
+input:checked + .slider:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+
+
+
+@media only screen and (max-width: 428px) {
+    
+    h2 {
+        font-size:1.5rem
+        
+    }
+    p {
+        font-size:1rem;
+    }
+    
+    input[type=submit] {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 328px) {
+    
+    h2 {
+        font-size:1.2rem
+        
+    }
+    p {
+        font-size:.8rem;
+    }
+    
+    input, label {
+        font-size: .8rem;
+    }
+
+
+    .slider {
+        width: 35px;
+        height: 15px;
+    }
+
+    .slider:after {
+        width: 10px;
+        height: 10px;
+        top: 3px;
+        left: 1px;
+    }
+
+    input:checked + .slider:after {
+        left: calc(100% - 1px);
+}
+}
