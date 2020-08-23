@@ -8,6 +8,7 @@
 .wrapper {
     background-image: linear-gradient(to right,#FFB9C9,#ADD6E8);
     padding: 5%;
+    height: 100vh;
 }
 
 h2 {
