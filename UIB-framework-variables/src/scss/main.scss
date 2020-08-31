@@ -1,0 +1,73 @@
+$primary:#016690;
+$link-hover-decoration:none;
+$border-color:#dad6ab;
+$card-border-color:#dad6ab;
+$theme-colors: ("card":#e0ddb2);
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 1024px,
+xl: 1200px
+);
+
+.banner {
+    height: 45vh;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-section {
+
+    .card{
+    padding: 1rem;
+    
+    @media only screen and (min-width: 768px) { 
+    .card-img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    }}
+}}
+
+
+
+footer a {
+    color: white;
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
