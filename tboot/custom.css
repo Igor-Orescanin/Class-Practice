@@ -1,0 +1,15 @@
+.btn {
+    border-radius: 0;
+}
+
+
+
+
+.centered {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 2rem;
+}

@@ -1,0 +1,13 @@
+
+
+@media screen and (max-width:768px){
+
+    .sections{
+        flex-direction:column;
+        align-items: center;
+        
+        .card {
+            margin-top: 2rem;
+        }
+    }
+}

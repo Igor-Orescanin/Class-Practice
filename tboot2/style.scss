@@ -1,0 +1,40 @@
+// OVERRIDING VARIABLES SHOULD GO ABOVE @IMPORT BOOTSTRAP
+// $primary:hotpink;
+$theme-colors: (
+    "primary":hotpink,
+    "purple":purple
+);
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+// .btn-primary {
+//     background-color: brown;
+// }
+
+// MIXIN ARE GROUP OF RULE THAT CAN BE USED IN CODE
+@mixin bg-aqua {
+    background-color: aqua;
+}
+
+@mixin bordered ($width, $color) {
+    border: $width solid $color;    
+}
+
+// @extend EXTENDS ALL RULES OF BOOTSTRAP CLASS
+.container-aqua {
+    @extend .container;
+    @include bg-aqua;
+    // background-color: aqua;
+    // border: 2px solid black;
+    @include bordered(5px, red);
+}
+
+.centered {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid black;
+    margin: 2rem;
+    @include bordered(2px,blue )
+}

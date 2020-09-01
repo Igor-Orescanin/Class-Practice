@@ -1,0 +1,52 @@
+.first1 {
+    height: 100%;
+
+    .normal {
+        @include pallet($yellow)
+    }
+    .dark {
+        @include dark($yellow)
+    }
+    .light {
+        @include light($yellow)
+    }
+}
+
+.second1 {
+
+    .normal {
+        @include pallet($pink)
+    }
+    .dark {
+        @include dark($pink)
+    }
+    .light {
+        @include light($pink)
+    }
+}
+
+.third1 {
+
+    .normal {
+        @include pallet($blue)
+    }
+    .dark {
+        @include dark($blue)
+    }
+    .light {
+        @include light($blue)
+    }
+}
+
+.fourth1 {
+
+    .normal {
+        @include pallet($purple)
+    }
+    .dark {
+        @include dark($purple)
+    }
+    .light {
+        @include light($purple)
+    }
+}

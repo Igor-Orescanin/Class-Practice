@@ -1,0 +1,10 @@
+.card {
+    width: 11rem;
+    height: 15rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.pallet-text {
+    @include card-border;
+    padding: .5rem;
+}

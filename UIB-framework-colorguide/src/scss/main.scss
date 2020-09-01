@@ -1,0 +1,19 @@
+
+
+
+@import './variables/colorVariables';
+
+@import './mixins/cardMixins';
+
+// This is where you can import other stylesheets or write your scss code
+@import '../../node_modules/bootstrap/scss/bootstrap'; 
+
+@import './cardStyles/cardBase';
+
+@import './pallet/palletBase';
+
+@import './pallet/palletShade';
+
+@import './mediaQuery/max768';
+
+
