@@ -6,16 +6,21 @@
 }
 
 @mixin pallet ($background){
+    
     flex-grow: 1;
     background-color: $background;
-}
 
-@mixin dark ($background){
+    .normal{
+    flex-grow: 1;  
+    background-color: $background;
+    }    
+    .dark{
     flex-grow: 1;  
     background-color: darken($background,15%);
-}
+    }
 
-@mixin light ($background){
+    .light{
     flex-grow: 1;
     background-color: lighten($background,15%);
+    }
 }

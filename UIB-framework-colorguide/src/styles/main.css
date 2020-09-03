@@ -9657,7 +9657,7 @@ h3 {
 }
 .card {
   width: 11rem;
-  height: 15rem;
+  height: 12rem;
   border-radius: 0 0 1rem 1rem;
 }
 
@@ -9673,82 +9673,66 @@ h3 {
   flex-grow: 1;
   background-color: #ffc83f;
 }
+.first .normal {
+  flex-grow: 1;
+  background-color: #ffc83f;
+}
+.first .dark {
+  flex-grow: 1;
+  background-color: #f2ac00;
+}
+.first .light {
+  flex-grow: 1;
+  background-color: #ffde8c;
+}
 
 .second {
   flex-grow: 1;
   background-color: #fa5e5b;
+}
+.second .normal {
+  flex-grow: 1;
+  background-color: #fa5e5b;
+}
+.second .dark {
+  flex-grow: 1;
+  background-color: #f81511;
+}
+.second .light {
+  flex-grow: 1;
+  background-color: #fca7a5;
 }
 
 .third {
   flex-grow: 1;
   background-color: #1d508d;
 }
+.third .normal {
+  flex-grow: 1;
+  background-color: #1d508d;
+}
+.third .dark {
+  flex-grow: 1;
+  background-color: #102c4e;
+}
+.third .light {
+  flex-grow: 1;
+  background-color: #2a74cc;
+}
 
 .fourth {
   flex-grow: 1;
   background-color: #684e79;
 }
-
-.first1 {
-  height: 100%;
-}
-.first1 .normal {
-  flex-grow: 1;
-  background-color: #ffc83f;
-}
-.first1 .dark {
-  flex-grow: 1;
-  background-color: #f2ac00;
-}
-.first1 .light {
-  flex-grow: 1;
-  background-color: #ffde8c;
-}
-
-.second1 {
-  height: 100%;
-}
-.second1 .normal {
-  flex-grow: 1;
-  background-color: #fa5e5b;
-}
-.second1 .dark {
-  flex-grow: 1;
-  background-color: #f81511;
-}
-.second1 .light {
-  flex-grow: 1;
-  background-color: #fca7a5;
-}
-
-.third1 {
-  height: 100%;
-}
-.third1 .normal {
-  flex-grow: 1;
-  background-color: #1d508d;
-}
-.third1 .dark {
-  flex-grow: 1;
-  background-color: #102c4e;
-}
-.third1 .light {
-  flex-grow: 1;
-  background-color: #2a74cc;
-}
-
-.fourth1 {
-  height: 100%;
-}
-.fourth1 .normal {
+.fourth .normal {
   flex-grow: 1;
   background-color: #684e79;
 }
-.fourth1 .dark {
+.fourth .dark {
   flex-grow: 1;
   background-color: #40304a;
 }
-.fourth1 .light {
+.fourth .light {
   flex-grow: 1;
   background-color: #8f70a3;
 }

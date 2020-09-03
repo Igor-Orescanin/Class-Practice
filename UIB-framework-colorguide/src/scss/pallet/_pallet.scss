@@ -1,0 +1,19 @@
+
+
+
+
+.first {
+    @include pallet($yellow);
+}
+
+.second {
+    @include pallet($pink);
+}
+
+.third {
+    @include pallet($blue);
+}
+
+.fourth {
+    @include pallet($purple);
+}
