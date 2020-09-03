@@ -1,0 +1,54 @@
+@mixin center ($direction:row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin hide {
+    visibility: hidden;
+}
+
+@mixin triangle ($direction:up, $color:#000) {
+    width: 0;
+    height: 0;
+    @if $direction == up {
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid $color;
+    } 
+    @else if $direction == down {
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid $color;
+    }   
+    @else {
+        @error "Unknown direction #{$direction}.";
+    }
+}
+
+// ↓↓↓↓↓↓↓↓↓↓↓INTERPOLATION-----STATING $duration AS A STRING SO IT CAN BE USED IN MIXIN↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+    // @mixin fade-in ($duration) {
+    //     animation: rotate  alternate infinite;
+    //     animation-duration: #{$duration};
+
+@mixin fade-in ($duration) {
+    animation-name: rotate;
+    -webkit-animation-duration: $duration;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes rotate {
+        0% {transform: rotate(0deg) scale(0); opacity: 0}
+        100% {transform: rotate(90deg) scale(5); opacity: 1}
+        }
+}
+
+@mixin font-size ($size) {
+    @if map-has-key($font-sizes, $size) {
+        font-size:map-get($font-sizes, $size);
+    }
+    @else {
+        @error '#{$size} is not defined. Use #{$font-sizes}';
+    }
+}
