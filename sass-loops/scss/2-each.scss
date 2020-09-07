@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .colors {
+        padding: 20px;
+        h1 {
+            color: white;
+            padding: 20px;
+        }
+    }
+}
+
+$colors: (
+    "color1":red,
+    "color2":green,
+    "color3":blue,
+    "color4":black
+);
+// FOR EACH KEY-VALUE PAIR IN $colors, GIVE CLASS $key A BACKGROUND-COLOR OF $value
+
+@each $key, $values in $colors {
+    .#{$key} {
+        background-color: $values;
+    }
+}
+
+$colorWeek: (
+    "monday":rgb(106, 106, 235),
+    "tuesday":rgb(235, 111, 111),
+    "wednesday":rgb(185, 178, 178),
+    "thursday":rgb(231, 184, 96),
+    "friday":rgb(218, 125, 171),
+    "saturday":rgb(130, 231, 130),
+    "sunday":rgb(231, 231, 99)
+);
+
+.week {
+    width: 80%;
+    padding: 3rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    h2 {
+        padding: 1rem;
+    }
+}
+
+@each $key, $value in $colorWeek {
+   .week .#{$key} {
+       background-color: $value;
+    }
+}   

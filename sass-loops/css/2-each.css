@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .colors {
+  padding: 20px;
+}
+.container .colors h1 {
+  color: white;
+  padding: 20px;
+}
+
+.color1 {
+  background-color: red;
+}
+
+.color2 {
+  background-color: green;
+}
+
+.color3 {
+  background-color: blue;
+}
+
+.color4 {
+  background-color: black;
+}
+
+.week {
+  width: 80%;
+  padding: 3rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.week h2 {
+  padding: 1rem;
+}
+
+.week .monday {
+  background-color: #6a6aeb;
+}
+
+.week .tuesday {
+  background-color: #eb6f6f;
+}
+
+.week .wednesday {
+  background-color: #b9b2b2;
+}
+
+.week .thursday {
+  background-color: #e7b860;
+}
+
+.week .friday {
+  background-color: #da7dab;
+}
+
+.week .saturday {
+  background-color: #82e782;
+}
+
+.week .sunday {
+  background-color: #e7e763;
+}
+
+/*# sourceMappingURL=2-each.css.map */

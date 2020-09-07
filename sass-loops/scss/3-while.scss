@@ -1,0 +1,16 @@
+$count:1;
+$font-size:16px;
+
+// WHILE $count < 4, GIVE CLASS SIZE-$count A FONT-SIZE OF $font-size *$count
+// @while $count < 4 {
+//     .size#{$count} {
+//         font-size: $font-size * $count;
+//     }
+//     $count: $count + 1;
+// }
+
+@for $i from 1 to 7 {
+    .size#{$i} {
+        font-size: 16px * $i;
+    }
+}

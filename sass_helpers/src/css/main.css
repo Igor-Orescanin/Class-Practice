@@ -1,0 +1,91 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.page--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.triangle-example::before, .triangle-example::after {
+  display: block;
+  content: '';
+  margin: 3rem;
+}
+
+.triangle-example::before {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #000;
+}
+
+.triangle-example::after {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid red;
+}
+
+.reveal-animation-example {
+  margin: 5rem;
+  height: 1rem;
+  width: 1rem;
+  background-color: turquoise;
+  animation-name: rotate;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(90deg) scale(5);
+    opacity: 1;
+  }
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-m {
+  font-size: 16px;
+}
+
+.text-l {
+  font-size: 32px;
+}
+
+.text-xl {
+  font-size: 48px;
+}
+
+.text-xxl {
+  font-size: 61px;
+}

@@ -1,0 +1,25 @@
+$count:1;
+$font-size:10px;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .sizes {
+        padding: 20px;
+    }
+}
+
+// @for $var from 1 to 11 {
+//     .size-#{$var} {
+//         font-size: 10px * $var;
+//     }
+// }
+
+@while $count < 11 {
+    .size-#{$count} {
+        font-size: $font-size * $count;
+    }
+}
